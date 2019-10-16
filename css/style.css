@@ -1,0 +1,472 @@
+/* MOBILE */
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .container 
+{
+    display: flex;
+    padding: 0 7%;
+    position: relative;
+}
+
+.header .container .logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container .logo a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .container .logo a span 
+{
+    letter-spacing: .1em;
+    font-size: 1.2em;
+    margin-left: 5px;
+    color: #00305B;
+}
+
+.header .container .link 
+{
+    margin-left: auto;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    transform: translateX(300px);
+    transition: .5s all ease-in-out;
+    background: #dfdfdf;
+    /* display: none; */
+}
+
+.header .container .link.active 
+{
+    transform: translateX(0);
+}
+
+.header .container .link ul
+{
+    list-style-type: none;
+    height: 100vh;
+    margin-top: 100px;
+    margin-right: 20px;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    width: 12rem;
+} 
+
+.header .container .link.active ul
+{
+    transition-delay: .5s;
+    opacity: 1;
+}
+
+.header .container .link ul.active
+{
+    transition-delay: .5s;
+    opacity: 1;
+}
+
+.header .container .link ul li
+{
+    display: block;
+    margin: 20px 0;
+}
+
+.header .container .link ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #636e72;
+    font-size: 1.3rem;
+    transition: .5s all ease-in-out;
+}
+
+.header .container .hambuger-button
+{
+    margin-left: auto;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.header .container .hambuger-button .bar1, 
+.header .container .hambuger-button .bar2,
+.header .container .hambuger-button .bar3
+{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: .5s all ease-in-out;
+}
+
+.header .container .hambuger-button.active .bar1
+{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.header .container .hambuger-button.active .bar2
+{
+    opacity: 0;
+}
+
+.header .container .hambuger-button.active .bar3
+{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 769px)
+{
+    .header .container .link 
+    {
+        margin-left: auto;
+        position: static;
+        right: 0;
+        top: 0;
+        transform: translateX(0px);
+        background: #fff;
+    }
+
+    .header .container .link ul
+    {
+        height: auto;
+        opacity: 1;
+        margin-top: 20px;
+        margin-right: auto;
+        width: auto;
+    } 
+    .header .hambuger-button 
+    {
+        display: none;
+    }
+
+    .header .container .link ul li
+    {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .header .container .link ul li a
+    {
+        color: #636e72;
+        font-size: .85rem;
+    }
+
+    .header .container .link ul li a:hover 
+    {
+        color: #74b9ff;
+    }
+}
+
+
+/* MOBILE */
+.banner-01
+{
+    margin-top: 10px;
+    height: 400px;
+    background: url('../img/home_banner_1.png') no-repeat center ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-01 .container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner-01 .container .layer
+{
+    width: 80%;
+    height: 80%;
+    background: #1234579c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-01 .container .layer h1
+{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 20px;
+}
+.banner-01 .container .layer h1 span:nth-child(1)
+{
+    display: block;
+}
+
+.banner-01 .container .layer h1 span:nth-child(2)
+{
+    font-size: 1.5rem;
+}
+
+.banner-01 .container .layer h5
+{
+    margin-left: 20px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 769px)
+{
+    .banner-01
+    {
+        height: 700px;
+    }
+
+    .banner-01 .container 
+    {
+        justify-content: flex-start;
+    }
+
+    .banner-01 .container .layer
+    {
+        width: 50%;
+        height: 100%;
+        background: #1234579c;
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-01 .container .layer div
+    {
+        padding-left: 30%;
+        padding-right: 10%;
+    }
+
+    .banner-01 .container .layer h1
+    {
+        font-size: 2.5rem;
+    }
+    .banner-01 .container .layer h5
+    {
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBILE */
+
+.practice .container
+{
+    height: 100%;
+}
+
+.practice .container .layer-left
+{
+    background: #eaf4f6;
+    text-align: center;
+    padding: 10% 0;
+    text-transform: uppercase;
+}
+
+.practice .container .layer-left span:nth-child(1)
+{
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #00305b;
+}
+
+.practice .container .layer-left span:nth-child(2)
+{
+    font-size: 1.5rem;
+    color: #406586;
+}
+
+.practice .container .layer-right
+{
+    background: #fafafa;
+}
+
+.practice .container .layer-right .col
+{
+    padding: 5% 10%;
+}
+
+.practice .container .layer-right .col h3
+{
+    color: #2e5578;
+    position: relative;
+}
+
+.practice .container .layer-right .col h3::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #41b7c4;
+    top: 20%;
+    left: -20px;
+}
+
+.practice .container .layer-right .col p
+{
+    color: #5f87ad
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 769px)
+{
+    .practice .container
+    {
+        display: flex;
+    }
+    .practice .container .layer-left
+    {
+        width: 30%;
+    }
+
+    .practice .container .layer-right
+    {
+        width: 70%;
+    }
+
+    .practice .container .layer-right .col
+    {
+        width: 30%;
+        float: left;
+    }
+}
+
+/* MOBILE & DESKTOP */
+
+.intro
+{
+    background: #00305b;
+    text-align: center;
+    color: #fff;
+}
+
+.intro .container h1
+{
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.intro .container h1 span
+{
+    font-weight: 100;
+}
+
+.intro .container .box
+{
+    padding: 0 10%;
+    padding-bottom: 3rem
+}
+
+.intro .container .box p 
+{
+    margin-bottom: 25px;
+}
+
+/* MOBILE & DESKTOP */
+
+.banner-02
+{
+    background: rgb(186,181,172) url('../img/home_banner_2.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    background-blend-mode: multiply;
+}
+
+/* MOBILE */
+
+.attroneys
+{
+    background: #eaf4f6 ;
+    text-align: center;
+}
+
+.attroneys .container .row .col h1 
+{
+    margin: 0;
+    padding: 30px 0;
+    color: #00305b;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.attroneys .container .row .col h1 span
+{
+    font-weight: 100;
+}
+
+.attroneys .container .row .col-intro
+{
+    padding-bottom: 50px;
+}
+
+.attroneys .container .row .col-intro figure figcaption .name
+{
+    margin-top: 20px;
+    color: #0c3a63;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.attroneys .container .row .col-intro figure figcaption .rol
+{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #91b9d9;
+}
+
+.attroneys .container .row .col-intro figure figcaption hr 
+{
+    border-color: #74b9ff;
+    border-width: .5px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.attroneys .container .row .col-intro figure figcaption .contact a
+{
+    color: #0c3a63 ;
+    text-decoration: none;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 769px)
+{
+    .attroneys .container .row 
+    {
+        overflow: hidden;
+    }
+
+    .attroneys .container .row .col-intro
+    {
+        width: 33%;
+        float: left;
+    }
+}
+
+.contact .container
+{
+    background: url('../img/home_banner_3.png');
+}
