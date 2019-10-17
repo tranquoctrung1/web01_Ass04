@@ -7,6 +7,11 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.header
+{
+    background: #fff;
+}
+
 .header .container 
 {
     display: flex;
@@ -128,6 +133,14 @@ body
 /* DESKTOP */
 @media only screen and (min-width: 769px)
 {
+    .header 
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
     .header .container .link 
     {
         margin-left: auto;
@@ -466,7 +479,242 @@ body
     }
 }
 
+
+/* MOBILE */
 .contact .container
 {
-    background: url('../img/home_banner_3.png');
+    background: rgb(9, 132, 227) url('../img/home_banner_3.png') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.contact .container .header-contact h1
+{
+    margin: 0;
+    font-size: 1.7rem;
+    padding: 20px 0 30px 20px;
+    background: #134777ab
+}
+.contact .container .header-contact h1 span
+{
+    font-weight: 100;
+}
+
+.contact .container .form-contact
+{
+    padding-left: 20px;
+}
+
+.contact .container .form-contact .title h3 
+{
+    text-transform: uppercase;
+}
+
+.contact .container .form-contact .title h3 span.address
+{
+    font-weight: 100;
+}
+
+.contact .container .form-contact .title span.text-contact
+{
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.contact .container .form-contact .title span.text-contact a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact .container .form-contact .title .find-us
+{
+    display: block;
+    margin: 30px 0;
+    text-decoration: none;
+    color: #82c2cf;
+}
+
+.contact .container .form-contact form 
+{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contact .container .form-contact form  p
+{
+    text-align: left;
+}
+
+.contact .container .form-contact form .group-input input
+{
+    margin-bottom: 10px;
+    width: 80%;
+    height: 20px;
+    outline: 0;
+    border: none;
+}
+
+.contact .container .form-contact form .group-input input.active 
+{
+    box-shadow: red 0px 0px 0px 2px inset;
+    background-color: rgb(178, 190, 195);
+}
+
+.contact .container .form-contact form .textarea-input textarea
+{
+    width: 80%;
+    margin-bottom: 5px;
+    height: 92px;
+}
+
+.contact .container .form-contact form .textarea-input textarea.active 
+{
+    box-shadow: red 0px 0px 0px 2px inset;
+    background-color: rgb(178, 190, 195);
+}
+
+.contact .container .form-contact form .textarea-input .submitButton
+{
+    width: 82%;
+    outline: 0;
+    border: none;
+    background: #41b7c4;
+    height: 25px;
+    color: #fff;
+}
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 769px)
+{
+    .contact .container 
+    {
+        display: flex;
+        padding-bottom: 20px;
+    }
+    
+    .contact .container .header-contact
+    {
+        width: 30%;
+    }
+
+    .contact .container .header-contact h1
+    {
+        height: 53%;
+        font-size: 2.2rem;
+        padding: 30%;
+    }
+
+    .contact .container .form-contact
+    {
+        width: 70%;
+    }
+
+    .contact .container .form-contact .title 
+    {
+        padding-top: 11%;
+    }
+
+    .contact .container .form-contact form .group-input
+    {
+        width: 40%;
+        float: left;
+        text-align: left;
+    }
+    .contact .container .form-contact form .group-input input 
+    {
+        width: 97%;
+    }
+
+    .contact .container .form-contact form .textarea-input
+    {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .contact .container .form-contact form .textarea-input
+    textarea 
+    {
+        width: 98%;
+    }
+
+    .contact .container .form-contact form .textarea-input .submitButton
+    {
+        width: 41%;
+        float: right
+    }
+}
+
+/* MOBILE & DESKTOP */
+
+.back-to-top 
+{
+    padding: 20px 0;
+    background: #00305b;
+    text-align: center;
+}
+
+.back-to-top .container .arrow-up
+{
+    transform: rotate(180deg);
+    margin-bottom: 10px;
+}
+
+.back-to-top .container .text
+{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* MOBILE */
+
+footer
+{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .icon
+{
+    margin-bottom: 10px;
+}
+
+footer .copy-right, footer .copy-right a
+{
+    color: rgb(116, 185, 255)
+}
+
+/* DESKTOP */
+
+
+@media only screen and (min-width: 769px)
+{
+    footer 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer .icon
+    {
+        display: flex;
+        align-items: center;
+        order: 2;
+        margin: 0;
+    }
+    footer .icon img:nth-child(1)
+    {
+        padding-right:  5px;
+    }
+
+    footer .copy-right
+    {
+        order: 1;
+    }
 }

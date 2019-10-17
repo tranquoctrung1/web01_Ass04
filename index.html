@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>1760221_Ass04</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="container">
             <div class="logo">
                 <a href="#">
@@ -18,11 +19,11 @@
             </div>
             <nav class="link" id="link">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Practice Areas</a></li>
-                    <li><a href="#">Our Vision</a></li>
-                    <li><a href="#">Attroneys</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#practice">Practice Areas</a></li>
+                    <li><a href="#our-vision">Our Vision</a></li>
+                    <li><a href="#attroneys">Attroneys</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="hambuger-button" onclick="onClick(this)">
@@ -33,7 +34,7 @@
         </div>
     </header>
 
-    <section class="banner-01">
+    <section class="banner-01" id="home">
         <div class="container">
             <div class="layer">
                 <div>
@@ -47,7 +48,7 @@
         </div>
     </section>
 
-    <section class="practice">
+    <section class="practice" id="practice">
         <div class="container">
             <div class="layer-left">
                 <span>Practice</span>
@@ -82,7 +83,7 @@
         </div>
     </section>
 
-    <section class="intro">
+    <section class="intro" id="our-vision">
         <div class="container">
             <h1>Our <span>Vision</span></h1>
             <div class="box">
@@ -95,7 +96,7 @@
 
     <section class="banner-02"></section>
 
-    <section class="attroneys">
+    <section class="attroneys" id="attroneys">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -174,32 +175,61 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="header">
-                <h1>CONTACT KNOLL & WALTERS</h1>
+            <div class="header-contact">
+                <h1>CONTACT <br> <span>KNOLL & WALTERS</span> </h1>
             </div>
             <div class="form-contact">
                 <div class="title">
-                    <h3>Our Address</h3>
-                    <span>500 Terry Fransico St.San Francisco, CA 94158</span> <br>
-                    <span><a href="mailto:info@mysite.com">nfo@mysite.com</a></span><br>
-                    <span><a href="tel:+1234567890">Tel 123-456-7890</a></span>
-                    <a href="#">Click Here to Find Us</a><br>
+                    <h3>Our <span class="address">Address</span> </h3>
+                    <span class="text-contact">500 Terry Fransico St.San Francisco, CA 94158</span> <br>
+                    <span class="text-contact"><a href="mailto:info@mysite.com"> <b>Email: </b> info@mysite.com</a></span><br>
+                    <span class="text-contact"><a href="tel:+1234567890"><b>Tel: </b>  123-456-7890</a></span>
+                    <a class="find-us" href="#">Click Here to Find Us</a>
 
                     <form action="#" method="post">
                         <p>For any general inquiries, please fill in the following contact form: </p>
-                        <input type="text"  name ="name" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="message" id="" 
-                        cols="30" rows="10"></textarea>
-                        <button class="submitButton" type="submit">Submit</button>
+                        <div class="group-input">
+                            <input type="text"  name ="name" placeholder="Name"><br>
+                            <input type="email" name="email" placeholder="Email"><br>
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="textarea-input">
+                            <textarea name="message" id="" 
+                            cols="30" rows="10" placeholder="Message"></textarea>
+                            <div>
+                                <button class="submitButton" type="submit">Submit</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="back-to-top">
+        <div class="container">
+            <div class="arrow-up">
+                <a href="#home">
+                    <img src="./img/arrow_down.png" alt="">
+                </a>
+            </div>
+            <div class="text">
+                Back To Top
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="icon">
+        <img src="./img/in_icon.png" alt="">
+        <img src="./img/twitter_icon.png" alt="">
+    </div>
+    <div class="copy-right">
+        &copy; 2023 by Knoll & Walters LLP. Proudly created with <a href="#"> Wix.com</a>
+    </div>
+</footer>
 </body>
 
 <script src="./js/main.js"></script>
